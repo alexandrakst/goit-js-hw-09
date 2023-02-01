@@ -17,8 +17,8 @@ const refs = {
 refs.startBtn.addEventListener('click', onStart);
 refs.startBtn.disabled = true;
 
-let counter = {};
 let timerID = 0;
+let counter = {};
 let selectedDate = [];
 
 flatpickr('input#datetime-picker', {
