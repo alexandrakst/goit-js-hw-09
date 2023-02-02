@@ -8,9 +8,10 @@ refs.startBtn.addEventListener('click', onStartBtnClick);
 refs.stopBtn.addEventListener('click', onStopBtnClick);
 
 let timerID = 0;
+const INTERVAL_DELAY = 1000;
 
 function onStartBtnClick() {
-  timerID = setInterval(changeBackgroundColor, 1000);
+  timerID = setInterval(changeBackgroundColor, INTERVAL_DELAY);
   refs.startBtn.disabled = true;
   refs.stopBtn.disabled = false;
 }
